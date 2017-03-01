@@ -16,9 +16,10 @@
     <!-- 多说公共 js 代码 start -->
     <script type="text/javascript">
         queue.offer(function(){
-            var duoshuoQuery = {
+            duoshuoQuery = {
                 short_name: '<%= theme.comment.shortname %>'
             };
+            console.log(duoshuoQuery);
             (function() {
                 var ds = document.createElement('script');
                 ds.type = 'text/javascript';
