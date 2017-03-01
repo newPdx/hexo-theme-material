@@ -3,16 +3,27 @@
     <% if(theme.scheme === 'Paradox') { %>
         <!-- Paradox Footer Left Section -->
         <%- partial('_partial/footer-left') %>
-
-        <!--Copyright-->
-        <div id="copyright">
-            Copyright&nbsp;©&nbsp;
-            <script type="text/javascript">
-                var fd = new Date();
-                document.write(fd.getFullYear());
-            </script>
-            &nbsp;<%- config.title %>
+        <div id="copyrightAndCount">
+            <!--Copyright-->
+            <div id="copyright">
+                Copyright&nbsp;©&nbsp;
+                <script type="text/javascript">
+                    var fd = new Date();
+                    document.write(fd.getFullYear());
+                </script>
+                &nbsp;<%- config.title %>
+            </div>
+            <% if(theme.busuanzi.enable === true){ %>
+                <!-- Count -->
+                <div id="count">
+                    <span id="busuanzi_container_site_pv">
+                        本站总访问量<span id="busuanzi_value_site_pv"></span>次
+                    </span>
+                </div>
+            <% } %>
+            
         </div>
+        
 
         <!-- Paradox Footer Right Section -->
 
