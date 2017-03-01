@@ -2272,3 +2272,6 @@ $(document).ready(function() {
         });
 
 })();
+(function(){
+    hljs.initHighlightingOnLoad();
+})();

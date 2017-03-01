@@ -80,10 +80,14 @@
     <![endif]-->
 
     <!-- Import CSS -->
+    <%- css('https://cdn.bootcss.com/highlight.js/9.9.0/styles/github.min.css') %>
     <%- css('css/material.min') %>
     <%- css('css/style.min') %>
     <%- partial('_partial/config_css') %>
-
+    <% if(is_home()){ %>
+        <link rel="stylesheet" href="/css/selfstyle.css">
+    <% } %>
+    <%- js('https://cdn.bootcss.com/highlight.js/9.9.0/highlight.min.js') %>
     <%- js('js/jquery.min') %>
     <%- js('js/queue') %>
 
