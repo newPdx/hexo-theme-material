@@ -100,7 +100,14 @@
             alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
         }
     </script>
-
+    <!-- 多说评论 -->
+    <% if(theme.comment.use === 'duoshuo'){ %>
+        <script type="text/javascript">
+           var duoshuoQuery = {
+                short_name: '<%= theme.comment.shortname %>'
+            };
+        </script>
+    <% } %>
     <% if(theme.analytics.baidu_id) { %>
     <!-- Baidu Analytics -->
     <script>
